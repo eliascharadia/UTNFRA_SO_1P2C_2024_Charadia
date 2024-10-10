@@ -166,3 +166,41 @@ hisotry
 history
 df -h |grep -i Examenes
 history -a
+cp ~/.bash_history repogit/UTNFRA_SO_1P2C_2024_Charadia/
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/
+ll
+vim .bash_history 
+git status
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_B.sh 
+git status
+git add .
+git status
+cd ..
+git status
+git add .
+git status
+git commit -m "ADD: Añadi el bash del historial, la informacion en el readme"
+git push
+vim README.md 
+git add .
+git status
+git commit -m "fix: corregi como se ve la informacion del readme"
+git push
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_A.sh 
+vim Punto_B.sh 
+cat Punto_B.sh 
+cd ..
+git status
+git add RTA_SCRIPT_Examen_20241009/Punto_B.sh 
+git status
+git commit -m "Feat: Script realizado del punto b para hacer las particiones, formateos y montajes"
+git push
+ll
+vim .bash_history 
+history -a
+vim .bash_history 
+cp ~/.bash_history /repogit/UTNFRA_SO_1P2C_2024_Charadia
+cd
+cp ~/.bash_history /repogit/UTNFRA_SO_1P2C_2024_Charadia
