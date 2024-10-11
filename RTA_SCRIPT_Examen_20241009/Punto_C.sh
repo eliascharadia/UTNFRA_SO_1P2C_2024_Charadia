@@ -24,7 +24,7 @@ do
                 grep -i $GRUPO /etc/group
         fi
 
-        if id $USUARIO > /dev/null; then
+        if id "$USUARIO" > /dev/null; then
                 echo "El usuario "$USUARIO" ya existe, por lo que no va ser creado denuevo"
                 echo
         else
@@ -51,13 +51,13 @@ sudo chmod -R 700 /Examenes-UTN/alumno_3
 
 for i in {1..3}
 do
-	sudo su -c "whoami > /Examenes-UTN/alumno$i/validar.txt"  p1c2_2024_A$i
+	sudo su -c "whoami > /Examenes-UTN/alumno_$i/validar.txt"  p1c2_2024_A$i
 	echo
 	echo "Permisos: "
-	sudo ls -l /Examenes-UTN/alumno$i
+	sudo ls -l /Examenes-UTN/alumno_$i
 	echo
 	echo "Usuario: "
-	sudo cat /Examenes-UTN/alumno$i/validar.txt
+	sudo cat /Examenes-UTN/alumno_$i/validar.txt
 done
 
 sudo su -c "whoami > /Examenes-UTN/profesores/validar.txt"  p1c2_2024_P1
