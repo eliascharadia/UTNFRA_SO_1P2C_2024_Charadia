@@ -51,7 +51,7 @@ sudo chmod -R 700 /Examenes-UTN/alumno_3
 
 for i in {1..3}
 do
-	su -c "whoami > /Examenes-UTN/alumno$i/validar.txt"  p1c2_2024_A$i
+	sudo su -c "whoami > /Examenes-UTN/alumno$i/validar.txt"  p1c2_2024_A$i
 	echo
 	echo "Permisos: "
 	sudo ls -l /Examenes-UTN/alumno$i
@@ -60,7 +60,7 @@ do
 	sudo cat /Examenes-UTN/alumno$i/validar.txt
 done
 
-su -c "whoami > /Examenes-UTN/profesores/validar.txt"  p1c2_2024_P1
+sudo su -c "whoami > /Examenes-UTN/profesores/validar.txt"  p1c2_2024_P1
 echo
 echo "Permisos: "
 sudo ls -l /Examenes-UTN/profesores
