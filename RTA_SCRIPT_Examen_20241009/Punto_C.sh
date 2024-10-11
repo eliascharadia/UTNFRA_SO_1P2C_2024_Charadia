@@ -13,14 +13,25 @@ IFS=$'\n'
 
 for LINEA in `cat $LISTA`
 do
-	USUARIO=$(echo  $LINEA |awk -F ':' '{print $1}')
-	GRUPO=$(echo  $LINEA |awk -F ':' '{print $2}')
+        USUARIO=$(echo  $LINEA |awk -F ':' '{print $1}')
+        GRUPO=$(echo  $LINEA |awk -F ':' '{print $2}')
 
-	sudo groupadd $GRUPO
-	sudo useradd -m -s /bin/bash -p "HASH_VAGRANT" -G $GRUPO $USUARIO
-	id $USUARIO
+        if grep -i $GRUPO /etc/group > /dev/null; then
+                echo "EL grupo "$GRUPO" ya existe, por lo que no va a ser creado de nuevo..."
+                echo
+        else
+                sudo groupadd $GRUPO
+                grep -i $GRUPO /etc/group
+        fi
+
+        if id $USUARIO > /dev/null; then
+                echo "El usuario "$USUARIO" ya existe, por lo que no va ser creado denuevo"
+                echo
+        else
+                sudo useradd -m -s /bin/bash -p "HASH_VAGRANT" -G $GRUPO $USUARIO
+                id $USUARIO
+        fi
 done
-IFS=$ANT_IFS
 
 
 echo "Cambiando permisos y propietarios"
