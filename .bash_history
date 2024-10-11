@@ -204,3 +204,115 @@ vim .bash_history
 cp ~/.bash_history /repogit/UTNFRA_SO_1P2C_2024_Charadia
 cd
 cp ~/.bash_history /repogit/UTNFRA_SO_1P2C_2024_Charadia
+cp ~/.bash_history repogit/UTNFRA_SO_1P2C_2024_Charadia
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia
+vim .bash_history 
+git add .
+git commit -m "Feat: actualice historial"
+git push
+cd
+sudo cat /etc/passw
+sudo cat /etc/passwd
+sudo grep vagrant /etc/passwd
+sudo grep vagrant /etc/shadow
+sudo grep vagrant /etc/shadow |awk -F ':' '{print $2}'
+groupadd p1c2_2024_gAlumno
+sudo groupadd p1c2_2024_gAlumno
+sudo groupadd p1c2_2024_gProfesores
+sudo cat /etc/groups
+sudo cat /etc/group
+sudo useradd -m -s /bin/bash -p "$(sudo grep vagrant /etc/shadow |awk -F ':' '{print $2}')" -G p1c2_2024_gAlumno p1c2_2024_A1
+sudo grep /etc/passwd
+sudo cat /etc/passwd
+sudo cat /etc/group
+id p1c2_2024_A1
+sudo cat /etc/group
+id p1c2_2024_A1
+sudo useradd -m -s /bin/bash -p "$(sudo grep vagrant /etc/shadow |awk -F ':' '{print $2}')" -G p1c2_2024_gAlumno p1c2_2024_A2
+sudo useradd -m -s /bin/bash -p "$(sudo grep vagrant /etc/shadow |awk -F ':' '{print $2}')" -G p1c2_2024_gAlumno p1c2_2024_A3
+sudo useradd -m -s /bin/bash -p "$(sudo grep vagrant /etc/shadow |awk -F ':' '{print $2}')" -G p1c2_2024_gProfesores p1c2_2024_P1
+sudo cat /etc/group
+cat /etc/shadow | tail -6
+sudo cat /etc/shadow | tail -6
+sudo cat /etc/shadow
+ll
+cd repogit/
+ll
+cd UTNFRA_SO_1P2C_2024_Charadia/
+ls
+cd RTA_SCRIPT_Examen_20241009/
+ls
+touch lista_usuarios_grupos.txt
+vim lista_usuarios_grupos.txt 
+ls
+vim Punto_C.sh 
+history
+vim Punto_C.sh 
+cd ..
+git status
+git add .
+git commit m- "ADD: lista con los usuarios y grupos. Feat: Realice la primera parte de la creacion de usuarios y grupos"
+git push
+git commit -m "ADD: lista con los usuarios y grupos. Feat: Realice la primera parte de la creacion de usuarios y grupos"
+git push
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/
+ls -l
+cd RTA_SCRIPT_Examen_20241009/
+ls -l
+cd
+cd /Examenes-UTN/
+ls -l
+cd
+chown -R p1c2_2024_A1:p1c2_2024_A1 /Examenes-UTN/alumno_1
+sudo chown -R p1c2_2024_A1:p1c2_2024_A1 /Examenes-UTN/alumno_1
+ls -l /Examenes-UTN/
+ls -l /Examenes-UTN/alumno_1
+sudo -R chmod 750 /Examenes-UTN/alumno_1
+sudo chmod 750 /Examenes-UTN/alumno_1
+ls -l /Examenes-UTN/alumno_1
+sudo ls -l /Examenes-UTN/alumno_1
+sudo ls -l /Examenes-UTN
+cd /Examenes-UTN/alumno_1
+sudo cd /Examenes-UTN/alumno_1
+sudo chown -R p1c2_2024_A2:p1c2_2024_A2 /Examenes-UTN/alumno_2
+ls -l /Examenes-UTN/
+sudo chmod 760 /Examenes-UTN/alumno_2
+ls -l /Examenes-UTN/
+sudo chown -R p1c2_2024_A3:p1c2_2024_A3 /Examenes-UTN/alumno_3
+ls -l /Examenes-UTN/
+sudo chmod 700 /Examenes-UTN/alumno_3
+ls -l /Examenes-UTN/
+sudo chown -R p1c2_2024_P1:p1c2_2024_Profesores /Examenes-UTN/profesores
+sudo chown -R p1c2_2024_P1:p1c2_2024_gProfesores /Examenes-UTN/profesores
+ls -l /Examenes-UTN/
+sudo chmod 775 /Examenes-UTN/profesores
+ls -l /Examenes-UTN/
+whoami
+man su
+su - p1c2_2024_A1
+sudo cat /etc/shadow | grep vagrant
+su - p1c2_2024_A1
+man su
+su -c "whoami > /Examenes-UTN/alumno_1/validar.txt" p1c2_2024_A1
+su -p1c2_2024_A1
+su - p1c2_2024_A1
+su - p1c2_2024_A2
+su - p1c2_2024_A3
+sudo chmod -R 775 /Examenes-UTN/profesores
+ls -l /Examenes-UTN/ 
+ls -l /Examenes-UTN/profesores/ 
+sudo chmod -R 750 /Examenes-UTN/alumno_1
+ls -l /Examenes-UTN/
+ls -l /Examenes-UTN/alumno_1
+sudo ls -l /Examenes-UTN/alumno_1
+sudo ls -l /Examenes-UTN/alumno_2
+sudo chmod -R 760 /Examenes-UTN/alumno_2
+sudo ls -l /Examenes-UTN/alumno_2
+sudo ls -l /Examenes-UTN/alumno_3
+sudo chmod -R 700 /Examenes-UTN/alumno_3
+sudo ls -l /Examenes-UTN/alumno_3
+sudo ls -l /Examenes-UTN/profesores/
+history
+sudo cat ./bash_history
+sudo cat  $HOME/.bash_history
+history -a
