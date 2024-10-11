@@ -28,10 +28,11 @@ do
                 echo "El usuario "$USUARIO" ya existe, por lo que no va ser creado denuevo"
                 echo
         else
-                sudo useradd -m -s /bin/bash -p "HASH_VAGRANT" -G $GRUPO $USUARIO
+                sudo useradd -m -s /bin/bash -p "$HASH_VAGRANT" -G $GRUPO $USUARIO
                 id $USUARIO
         fi
 done
+IFS=$ANT_IFS
 
 
 echo "Cambiando permisos y propietarios"
