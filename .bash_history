@@ -316,3 +316,160 @@ history
 sudo cat ./bash_history
 sudo cat  $HOME/.bash_history
 history -a
+cp  $HOME/.bash_history repogit/UTNFRA_SO_1P2C_2024_Charadia
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia
+vim .bash_history 
+git status
+git add .
+git commit -m "Modificacion: actualice el historial"
+git push
+cd RTA_SCRIPT_Examen_20241009/
+ls
+cat Punto_A.sh 
+cat Punto_b.sh 
+cat Punto_c.sh 
+vim Punto_C.sh 
+grep chmod history
+history | grep chmod
+vim Punto_C.sh 
+git status
+git add .
+git commit -m "Modificacion: Agregue los cambios de persmisos y dueños en el script del punto c"
+git push
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_B.sh 
+git add .
+commit -m "FIX: Corregi error de tipeo al montar la particion 12 logica"
+git push
+git commit -m "FIX: Corregi error de tipeo al montar la particion 12 logica"
+git push
+ls -l
+cd
+ls -l /Examenes-UTN/
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_SCRIPT_Examen_20241009/
+vim Punto_C.sh 
+git add .
+git commit -m "feat: Agregue condicion que valida existencia previa de grupos y usuarios"
+git push
+vim Punto_C.sh 
+vim lista_usuarios_grupos.txt 
+vim Punto_C.sh 
+sudo cat /etc/shadow
+vim Punto_C.sh 
+git status
+git add .
+git commit -m "fix: corregi un error en el hash y en los separadores de la lista de usuarios y grupos"
+git push
+vim Punto_B.sh 
+df -h|grep -i examenes
+sudo fdisk -l /dev/sdc
+mount -a
+df -h|grep -i examenes
+df -h| grep -i examenes
+df -h
+vim /etc/fstab
+cd
+/Examenes-UTN/
+cd /Examenes-UTN/
+ls -l
+cd alumno_1
+sudo cd alumno_1
+su - p1c2_2024_A1
+cd
+sudo chmod -R 757 /Examenes-UTN/alumno_1
+ls -l /Examenes-UTN/
+mount -a
+df -h |grep -i examenes
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_SCRIPT_Examen_20241009/
+vim Punto_C.sh 
+git status
+git add .
+git commit -m "feat: actualice la forma en que se accede al usuario para crear el validar.txt para que no me pida la contraseña"
+git push
+vim Punto_B.sh 
+vim Punto_C.sh 
+git status
+git add .
+git commit -m "fix: Para que la salida del id del usuario valla a null y arregle los nombres de los directorios de los alumnos para crear el validar.txt"
+git push
+cd
+mkdir $HOME/estructura
+ls -l
+mkdir -p $HOME/Estructura_Asimetrica/{cliente,correo}/cartas_{1..10}
+tree Estructura_Asimetrica/
+rm Estructura_Asimetrica/
+rmdir Estructura_Asimetrica/
+rmdir -r Estructura_Asimetrica/
+rmdir -R Estructura_Asimetrica/
+man rmdir
+rm -rf Estructura_Asimetrica/
+ls
+mkdir -p $HOME/Estructura_Asimetrica/{cliente,correo}/{cartas_{1..10},correo{1..3}}
+tree Estructura_Asimetrica/
+rm -rf Estructura_Asimetrica/
+tree Estructura_Asimetrica/
+mkdir -p $HOME/Estructura_Asimetrica/{cliente,correo}/{cartas_{1..100},correo_{1..10}}
+tree Estructura_Asimetrica/
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+rm -rf Estructura_Asimetrica/
+mkdir -p $HOME/Estructura_Asimetrica/{cliente,correo}/{cartas_{1..100},carteros_{1..10}}
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+rm -rf Estructura_Asimetrica/
+mkdir -p $HOME/Estructura_Asimetrica/{cliente,correo}/{cartas_{1..100},correo/carteros_{1..10}}
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+tree Estructura_Asimetrica/
+rm -rf Estructura_Asimetrica/
+mkdir -p $HOME/Estructura_Asimetrica/{{cliente,correo}/cartas_{1..10},correo_{1..3}}
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+rm -rf Estructura_Asimetrica/
+mkdir -p $HOME/Estructura_Asimetrica/{{cliente,correo}/cartas_{1..10},correo/carteos_{1..3}}
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+rm -rf Estructura_Asimetrica/
+mkdir -p $HOME/Estructura_Asimetrica/{{cliente,correo}/cartas_{1..100},correo/carteros_{1..10}}
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+ls
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_SCRIPT_Examen_20241009/
+vim Punto_D.sh 
+rm -rf Estructura_Asimetrica/
+ls
+cd
+ls
+rm -rf Estructura_Asimetrica/
+ls
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_SCRIPT_Examen_20241009/
+./Punto_D.sh 
+cd
+ls
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_SCRIPT_Examen_20241009/
+vim Punto_D.sh 
+./Punto_D.sh 
+cd
+ls
+tree Estructura_Asimetrica/
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_SCRIPT_Examen_20241009/
+vim Punto_D.sh 
+rm -rf Estructura_Asimetrica/
+cd
+ls
+rm -rf Estructura_Asimetrica/
+ls
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_SCRIPT_Examen_20241009/
+./Punto_D.sh 
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+sudo tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+vim Punto_D.sh 
+cd
+rm -rf Estructura_Asimetrica/
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_SCRIPT_Examen_20241009/
+./Punto_D.sh 
+git status
+git add .
+git commit -m "ADD: Escribi los comandos para hacer la Estructura Asimétrica"
+git push
+history -a
+cat \$HOME/.bash_history 
+cat $HOME/.bash_history 
+cd .. 
+ls
+ll
