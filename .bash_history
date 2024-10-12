@@ -473,3 +473,195 @@ cat $HOME/.bash_history
 cd .. 
 ls
 ll
+cp $HOME/.bash_history .bash_history 
+cat .bash_history 
+git status
+git add .
+git commit -m "feat: Actualice el historial"
+git push
+cd ..
+cd UTNFRA_SO_1P2C_2024_Charadia/
+ls 
+tree RTA_ARCHIVOS_Examen_20241009/
+cd RTA_ARCHIVOS_Examen_20241009/
+ls
+ls -l
+cat /proc/meminfo 
+grep -i memtotal /proc/meminfo 
+cd
+grep -i memtotal /proc/meminfo > repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_ARCHIVOS_Examen_20241009/Filtro_Basico.txt
+ls -l /
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_ARCHIVOS_Examen_20241009
+cat Filtro_Basico.txt 
+dmidecode -t chassis
+sudo dmidecode -t chassis
+sudo dmidecode -t chassis |awk '{print $1 $2}'
+sudo dmidecode -t chassis |awk -F '/n' '{print $1 $2}'
+man awk
+awk --help
+man awk
+sudo dmidecode -t chassis |awk -b '{print $1 $2}'
+sudo dmidecode -t chassis
+sudo dmidecode -t chassis |awk -b 
+sudo dmidecode -t chassis |awk -b '{print $1}'
+sudo dmidecode -t chassis
+sudo dmidecode -t chassis |grep -Ei "chassis|manufactu"
+cd
+sudo dmidecode -t chassis |grep -Ei "chassis|manufactu" >> repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_ARCHIVOS_Examen_20241009/Filtro_Basico.txt 
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_ARCHIVOS_Examen_20241009/
+cat Filtro_Basico.txt 
+cd
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_SCRIPT_Examen_20241009/
+vim Punto_E.sh 
+history
+vim Punto_E.sh 
+git add .
+git status
+cd ..
+git add .
+git status
+git commit -m "ADD: Escribo los comandos para hacer el punto E y creo el archivo Filtro_basico.txt en RTA_ARCHIVOS_Examen_20241009 con la info que se pide"
+git push
+curl -s ifconfig.me
+echo curl -s ifconfig.me 
+cat curl -s ifconfig.me
+curl -s ifconfig.me | grep 186
+curl -s ifconfig.me | grep .
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_F.sh 
+ls -l
+./Punto_F.sh 
+whoami
+vim Punto_F.sh 
+sudo /etc/shadow
+sudo cat /etc/shadow
+grep --help
+sudo cat /etc/shadow |grep whoami
+sudo cat /etc/shadow |grep $(whoami)
+sudo cat /etc/shadow |grep $(whoami) |awk -F ':' '{print $1}'
+sudo cat /etc/shadow |grep $(whoami) |awk -F ':' '{print $2}'
+vim Punto_F.sh 
+cd $HOME/repogit/UTNFRA_SO_1P2C_2024_Charadia
+git remote get-url origin
+ls
+tree RTA_SCRIPT_Examen_20241009/
+tree RTA_ARCHIVOS_Examen_20241009/
+wc << FIN > RTA_ARCHIVOS_Examen_20241009/Filtro_Avanzado.txt
+Mi IP Publica es: 186.158.252.41
+Mi usuario es: vagrant
+El Hash de mi Usuario es: $y$j9T$f7V.J8o8/5JXqaI3xUKKQ0$oND2iaEkOI22AcHc9kfKwylXqBi.VixFO/cPGuxMD..
+La URL de mi repositorio es: git@github.com:eliascharadia/UTNFRA_SO_1P2C_2024_Charadia.git
+FIN
+
+cd RTA_ARCHIVOS_Examen_20241009/
+cat Filtro_Avanzado.txt 
+vim Filtro_Avanzado.txt 
+rm Filtro_Avanzado.txt 
+ls
+cat << FIN > Filtro.txt
+hola
+soy
+elias
+FIN
+
+cat Filtro.txt 
+rm Filtro.txt 
+ls
+cat << FIN > Filtro_Avanzado.txt
+Mi IP Publica es: 186.158.252.41
+Mi usuario es: vagrant
+El Hash de mi Usuario es: $y$j9T$f7V.J8o8/5JXqaI3xUKKQ0$oND2iaEkOI22AcHc9kfKwylXqBi.VixFO/cPGuxMD..
+La URL de mi repositorio es: git@github.com:eliascharadia/UTNFRA_SO_1P2C_2024_Charadia.git
+FIN
+
+cat Filtro_Avanzado.txt 
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_ARCHIVOS_Examen_20241009/
+cat Filtro_Avanzado.txt 
+ls
+rm Filtro_Avanzado.txt 
+ls
+history
+cat << FIN > Filtro_Avanzado.txt
+Mi IP Publica es: 186.158.252.41
+Mi usuario es: vagrant
+El Hash de mi Usuario es: '$y$j9T$f7V.J8o8/5JXqaI3xUKKQ0$oND2iaEkOI22AcHc9kfKwylXqBi.VixFO/cPGuxMD..'
+La URL de mi repositorio es: git@github.com:eliascharadia/UTNFRA_SO_1P2C_2024_Charadia.git
+FIN
+
+cat Filtro_Avanzado.txt 
+rm Filtro_Avanzado.txt 
+cat << 'FIN' > Filtro_Avanzado.txt
+Mi IP Publica es: 186.158.252.41
+Mi usuario es: vagrant
+El Hash de mi Usuario es: $y$j9T$f7V.J8o8/5JXqaI3xUKKQ0$oND2iaEkOI22AcHc9kfKwylXqBi.VixFO/cPGuxMD..
+La URL de mi repositorio es: git@github.com:eliascharadia/UTNFRA_SO_1P2C_2024_Charadia.git
+FIN
+
+cat Filtro_Avanzado.txt 
+cat Filtro_Avanzado.txt |grep $(sudo cat /etc/shadow | grep vagrant|awk -F ':' '{print $2}')
+cd ..
+cd RTA_SCRIPT_Examen_20241009/
+la
+vim Punto_F.sh 
+cd ..
+cd RTA_ARCHIVOS_Examen_20241009/
+rm Filtro_Avanzado.txt 
+ls
+cd ..
+cd RTA_SCRIPT_Examen_20241009/
+./Punto_F.sh 
+cd ..
+tree
+cd RTA_ARCHIVOS_Examen_20241009/
+cat Filtro_Avanzado.txt 
+rm Filtro_Avanzado.txt 
+cd ..
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_F.sh 
+cd ..
+cd RTA_ARCHIVOS_Examen_20241009/
+ls
+cd ..
+cd RTA_SCRIPT_Examen_20241009/
+./Punto_F.sh 
+vim Punto_F.sh 
+cd ..
+cd RTA_ARCHIVOS_Examen_20241009/
+rm Filtro_Avanzado.txt 
+ls
+cd ..
+cd RTA_SCRIPT_Examen_20241009/
+./Punto_F.sh 
+vim Punto_F.sh 
+cd ..
+cd RTA_ARCHIVOS_Examen_20241009/
+cat Filtro_Avanzado.txt 
+rm Filtro_Avanzado.txt 
+cd ..
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_F.sh 
+./Punto_F.sh 
+cd ..
+cd RTA_SCRIPT_Examen_20241009/
+cd ..
+cd RTA_ARCHIVOS_Examen_20241009/
+cat Filtro_Avanzado.txt 
+cd ..
+cd RTA_SCRIPT_Examen_20241009/
+vim Punto_F.sh 
+./Punto_F.sh 
+cd ..
+cd RTA_ARCHIVOS_Examen_20241009/
+cat Filtro_Avanzado.txt 
+cd ..
+git status
+git add RTA_SCRIPT_Examen_20241009/Punto_F.sh 
+git status
+git commit -m "ADD: Agregue los comandos para hacer el filtro avanzado"
+git status
+git push
+git add RTA_ARCHIVOS_Examen_20241009/Filtro_Avanzado.txt 
+git commit -m "ADD: archivo con info del filtro avanzado"
+git push
+history -a
+la
