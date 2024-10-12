@@ -665,3 +665,37 @@ git commit -m "ADD: archivo con info del filtro avanzado"
 git push
 history -a
 la
+cp $HOME/.bash_history .bash_history 
+cat .bash_history 
+git status
+git add .
+git commit -m "FEAT: actualice el historial"
+git push
+cd
+cd repogit/UTNFRA_SO_1P2C_2024_Charadia/RTA_SCRIPT_Examen_20241009/
+vim Punto_D.sh 
+vim Punto_E.sh 
+git add .
+git status
+git commit -m "feat: Cambie el directorio donde direcciono la salida del whoami"
+vim Punto_E.sh 
+git push
+vim Punto_C.sh 
+vim ~/.vimrc
+vim Punto_C.sh 
+git status
+git add .
+git commit -m "feat: cambie la forma de filtrar a un usuario existente al momento de la creacion de usuarios"
+git push
+cd ..
+ls
+ls -l
+ls
+cd ..
+ls
+ls -l
+cd UTNFRA_SO_1P2C_2024_Charadia/
+ls
+ll
+cat .bash_history 
+history -a
