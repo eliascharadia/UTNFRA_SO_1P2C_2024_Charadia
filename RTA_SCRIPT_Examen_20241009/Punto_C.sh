@@ -24,7 +24,7 @@ do
                 grep -i $GRUPO /etc/group
         fi
 
-        if id "$USUARIO" > /dev/null; then
+        if grep $USUARIO /etc/passwd > /dev/null; then
                 echo "El usuario "$USUARIO" ya existe, por lo que no va ser creado denuevo"
                 echo
         else
