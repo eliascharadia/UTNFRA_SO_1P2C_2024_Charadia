@@ -1,0 +1,15 @@
+
+D - Permisos: (Promocion)
+
+NO MODIFICAR PERMISOS DEL archivo
+NO MODIFICAR OWNER
+Modificar SOLAMENTE los permisos del USUARIO DUEÑO de la CARPETA "Permisos*" para que:
+
+    - El usuario Puede ver el contenido del archivo, pero NO conocer su existencia
+
+    Puede validar con:
+       ls -ld Permisos
+       ls -l Permisos
+       cat Permisos/archivo.txt
+
+

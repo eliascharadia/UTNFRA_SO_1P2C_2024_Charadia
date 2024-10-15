@@ -1,0 +1,50 @@
+CODIGO: A3:B3:C1:D2
+
+A - Particion, formateo y montaje: (Obligatorio)
+        - 1 Particion Primaria de 512M.
+        - 1 Particion Logica del resto del disco.
+                
+    Scriptear:
+        - Utilizar la 1ra Particion como memoria Swap
+        - Montar la 2da Particion en /P_Defensa
+
+B - Estructura Directorio: (Promocion)
+    - Scriptear la creacion de la siguiente Estructura de directorios:  
+
+
+Epocas/
+├── antigua
+│   ├── eventos
+│   └── personas
+└── moderna
+    ├── eventos
+    ├── personas
+    └── tecnologia
+
+
+C - Usuarios / Grupos:
+    Scriptear la creacion del usuario: UDef_TuApellido
+
+    (Obligatorio)
+    - Directorio Home: /P_Defensa/UDef_TuApellido
+
+    (Puntos Extras para Promocion)
+    - Obtener el Grupo Secundario de un usuario Pasado por Parametro.
+    - Usar Dicho Grupo Secundario en la creacion del usuario (UDef_TuApellido), para definir su Grupo Primario.
+    - Pruebe el correcto funcionamiento de su script pasando como parametro el usuario: p1c2_2024_P1
+
+
+D - Permisos: (Promocion)
+
+NO MODIFICAR PERMISOS DEL archivo
+NO MODIFICAR OWNER
+Modificar SOLAMENTE los permisos del USUARIO DUEÑO de la CARPETA "Permisos*" para que:
+
+    - El usuario Puede ver el contenido del archivo, pero NO conocer su existencia
+
+    Puede validar con:
+       ls -ld Permisos
+       ls -l Permisos
+       cat Permisos/archivo.txt
+
+
